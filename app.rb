@@ -24,9 +24,16 @@ get '/random-dog' do
   erb(:index)
 end
 
-get '/named-dog' do
+post '/named-dog' do
   p params
   @names = params[:name]
   @surname = params[:surname]
   erb(:index)
 end
+
+get '/form' do
+erb(:form)
+end
+
+
+
